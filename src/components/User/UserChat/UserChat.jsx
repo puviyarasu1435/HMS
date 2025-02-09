@@ -4,7 +4,7 @@ import { Box, TextField, Button, Typography, Paper } from "@mui/material";
 import { useNavigate } from "react-router";
 import ReviewTable from "../MonitorTable/ReviewTable";
 
-const socket = io("http://localhost:8080"); // Change to your backend URL
+const socket = io("http://localhost:5000"); // Change to your backend URL
 
 const UserChat = () => {
   const [messages, setMessages] = useState([]);
