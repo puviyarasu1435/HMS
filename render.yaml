@@ -1,1 +1,7 @@
-
+services:
+  - name: vite-app
+    type: web
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    pullRequestPreviewsEnabled: true
