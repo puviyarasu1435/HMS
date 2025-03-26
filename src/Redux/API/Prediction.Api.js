@@ -8,7 +8,6 @@ export const PredictionApi = createApi({
       headers.set("accept", "text/plain");
       return headers;
     },
-    mode: "no-cors",
     baseUrl: "https://56e2-2405-201-e039-f062-e8fd-2121-5619-9dc.ngrok-free.app" 
   }),
   endpoints: (builder) => ({
