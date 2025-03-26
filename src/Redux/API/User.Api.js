@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const UserApi = createApi({
   reducerPath: "UserApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8080" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://hms-api-ibja.onrender.com" }),
   tagTypes: ["user","test"],
   endpoints: (builder) => ({
     fetchUsers: builder.query({
