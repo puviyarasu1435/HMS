@@ -3,7 +3,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const PredictionApi = createApi({
   reducerPath: "PredictionApi",
   baseQuery: fetchBaseQuery({ 
-    baseUrl: "https://pythonapi-ik3e.onrender.com" 
+    baseUrl: "https://pythonapi-ik3e.onrender.com",
+    mode:"cors"
   }),
   endpoints: (builder) => ({
     predict: builder.mutation({
