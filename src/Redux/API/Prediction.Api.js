@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const PredictionApi = createApi({
   reducerPath: "PredictionApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://hms-api-ibja.onrender.com" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000" }),
   endpoints: (builder) => ({
     predict: builder.mutation({
       query: (data) => ({
