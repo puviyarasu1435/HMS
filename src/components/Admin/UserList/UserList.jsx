@@ -33,7 +33,7 @@ export default function UserList({ Data,onSelect }) {
               component={"button"}
               alignItems="flex-start"
               sx={{ mb: 1 }}
-              onClick={()=>onSelect(user?.id)}
+              onClick={()=>onSelect(user?._id)}
             >
               <ListItemText
                 primary={"Name : "+user?.username}
