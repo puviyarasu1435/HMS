@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import ReviewTable from "../../User/MonitorTable/ReviewTable";
 // import ReviewTable from "../MonitorTable/ReviewTable";
 
-const socket = io("http://localhost:8080"); // Change to your backend URL
+const socket = io("https://hms-api-ibja.onrender.com"); // Change to your backend URL
 
 const AdminChat = ({UserId}) => {
   const [messages, setMessages] = useState([]);
